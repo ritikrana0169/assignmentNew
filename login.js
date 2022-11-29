@@ -1,5 +1,5 @@
 let regEmail="ritik@gmail.com";
-let rPass="ritik@123";
+let regPass="ritik@123";
 
 let entEmail="ritik@gmail.com";
 let entPass="ritik@123";
