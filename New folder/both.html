@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Write all styles here  */
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .nav{
+          display: flex;
+          padding: 0px 40px 0px 40px;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          height: 8vh;
+          box-shadow: 1px 1px 10px rgb(117, 117, 117);
+         color: #2870b9;
+        }
+        .nav>:nth-child(2){
+          display: flex;
+          /* padding: 0px 30px 0px 30px; */
+          width: 65%;
+          justify-content: space-between;
+          align-items: center;
+          font-weight:600 ;
+          color: teal;
+        }
+        .nav>:nth-child(2)>p{
+          width: max-content;
+        }
+  .nav>:nth-child(2)>p:hover{
+    cursor: pointer;
+  }
+  .nav>:nth-child(3){
+    width:9vw;
+    height: 5.5vh;
+    border: transparent;
+    color: white;
+    background-color: red;
+  }
+  /* top section */
+  .top{
+    width: 100%;
+    padding: 70px 0px 0px 100px;
+  }
+  .top>:nth-child(1){
+    margin-bottom: 20px;
+  }
+  .top>:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 91%;
+   color: white;
+    text-align: center;
+    gap: 20px;
+  }
+  .top>:nth-child(2)>div{
+    background-color: red;
+  }
+  .top>:nth-child(2)>div img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  width: 40%;
+  }
+  .top>:nth-child(2)>div>:nth-child(2){
+    font-size: 26px;
+    margin-bottom: 2%;
+  }
+  .top>:nth-child(2)>div>:nth-child(3){
+    width: 78%;
+    margin: auto;
+  }
+  .top>:nth-child(2)>div>:nth-child(4){
+  width: 8vw;
+  height: 5vh;
+  margin: 5% 0px 10% 0px;
+  border: transparent;
+  background-color: white;
+  color: red;
+  }
+  /* mid section */
+  .mid{
+    width: 100%;
+    padding: 70px 0px 0px 100px;
+  }
+  .mid>:nth-child(1){
+    margin-bottom: 20px;
+  }
+  .mid>:nth-child(2){
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 10px;
+     width: 91%;
+  }
+  .mid>:nth-child(2)>div{
+    text-align: center;
+   box-shadow: 1px 1px 10px rgb(199, 193, 193);
+  }
+  .mid>:nth-child(2)>div>:nth-child(1){
+    width: 25%;
+  }
+  .mid>:nth-child(2)>div>:nth-child(2){
+  margin-top: 3%;
+  margin-bottom: 3%;
+  }
+  .mid>:nth-child(2)>div>:nth-child(3){
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .mid>:nth-child(2)>div>:nth-child(4){
+    width: 95%;
+    height: 5vh;
+    padding-top: 5%;
+    margin: 10px auto 3% auto;
+    border: 1px solid rgb(117, 108, 108);
+    border-width:1px 0px 0px 0px ;
+    color: red;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  /* bottom section */
+  .bottom{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f4f4f4;
+  }
+  .bottom>:nth-child(1){
+    width: 60%;
+  }
+  .bottom>:nth-child(1) img{
+    width: 80%;
+    padding-left: 10%;
+  }
+  .bottom>:nth-child(2){
+    width: 40%;
+    flex-direction: row;
+  }
+  .bottom>:nth-child(2)>:nth-child(1){
+    margin-top: 5%;
+  }
+  .bottom>:nth-child(2)>:nth-child(2){
+    margin-top: 5%;
+    width: 70%;
+  }
+  .bottom>:nth-child(2)>:nth-child(3){
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .bottom>:nth-child(2)>:nth-child(3)> img{
+    width: 45%;
+  
+  }
+        @media only screen and (max-width: 1000px) {
+          /* Medium Screen  */
+          .nav>:nth-child(2){
+            display: none;
+          }
+          .nav>:nth-child(3){
+            width: 13vw;
+          }
+          .top>:nth-child(2)>div>:nth-child(4){
+            width: 11vw;
+          }
+          .top>:nth-child(2){
+            grid-template-columns: repeat(2,1fr);
+          }
+          .mid>:nth-child(2){
+            grid-template-columns: repeat(2,1fr);
+          }
+          .bottom{
+            flex-direction: column;
+          }
+          .bottom>:nth-child(1){
+            width: 100%;
+          }
+          .bottom>:nth-child(2){
+            width: 100%;
+            text-align: center;
+          }
+          .bottom>:nth-child(2)>:nth-child(2){
+            width: 100%;
+          }
+          .bottom>:nth-child(1) img{
+    padding-left: 20%;
+  }
+          .bottom>:nth-child(2)>:nth-child(3){
+  width: 60%;
+  margin: 5% auto 5% auto;
+  justify-content: space-around;
+          }
+          .bottom>:nth-child(2)>:nth-child(3) img{
+  width: 40%;
+          }
+        }
+  
+        @media only screen and (max-width: 600px) {
+          /* Small Screen  */
+          .nav>:nth-child(2){
+            display: none;
+          }
+          .nav>:nth-child(3){
+            width: 19vw;
+          }
+          .top>:nth-child(2)>div>:nth-child(4){
+            width: 15vw;
+          }
+          .top>:nth-child(2){
+            grid-template-columns: repeat(1,1fr);
+          }
+          .mid>:nth-child(2){
+            grid-template-columns: repeat(1,1fr);
+          }
+          .bottom{
+            flex-direction: column;
+          }
+          .bottom>:nth-child(1){
+            width: 100%;
+          }
+          .bottom>:nth-child(2){
+            width: 100%;
+            text-align: center;
+          }
+          .bottom>:nth-child(2)>:nth-child(2){
+            width: 100%;
+          }
+          .bottom>:nth-child(1) img{
+    padding-left: 25%;
+  }
+          .bottom>:nth-child(2)>:nth-child(3){
+  width: 60%;
+  margin: 5% auto 5% auto;
+  justify-content: space-around;
+          }
+          .bottom>:nth-child(2)>:nth-child(3) img{
+  width: 40%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    
+    <div class="nav">
+      <!-- Create the Navbar here  -->
+      <!-- Use Flex to achieve the layout  -->
+      <h1>Domino's Pizza</h1>
+      <div>
+        <p>OUR MENU</p>
+        <p>DOMINO'S STORES</p>
+        <p>GIFT CARD</p>
+        <p>CORPORATE ENQUIRY</p>
+        <p>CONTACT</p>
+      </div>
+      <button>Download App</button>
+    </div>
+    <div class="top">
+      <h1>Order</h1>
+      <div>
+        <!-- Here should have 6 divs -->
+        <!-- Use grid to achieve the layout -->
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+          <h3>VEG PIZZA</h3>
+        <p>A delight for veggie lovers!Choose from our wide range of delicious vegetarian pizza's it's softer and tastier</p>
+      <button>VIEW ALL</button></div>
+      <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+        <h3>OUR MENU</h3>
+      <p>Indulge into mouth-watering taste of Pizza mania range,perfect answere to all your food cravings</p>
+    <button>VIEW ALL</button></div>
+    <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+      <h3>VEG PIZZA</h3>
+    <p>A delight for veggie lovers!Choose from our wide range of delicious vegetarian pizza's it's softer and tastier</p>
+  <button>VIEW ALL</button></div>
+  <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+    <h3>OUR MENU</h3>
+  <p>Indulge into mouth-watering taste of Pizza mania range,perfect answere to all your food cravings</p>
+<button>VIEW ALL</button></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+  <h3>VEG PIZZA</h3>
+<p>A delight for veggie lovers!Choose from our wide range of delicious vegetarian pizza's it's softer and tastier</p>
+<button>VIEW ALL</button></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="Error Loading">
+  <h3>VEG PIZZA</h3>
+<p>A delight for veggie lovers!Choose from our wide range of delicious vegetarian pizza's it's softer and tastier</p>
+<button>VIEW ALL</button></div>
+      </div>
+    </div>
+    <div class="mid">
+      <h1>Explore</h1>
+      <div>
+        <!-- Here should have 8 divs -->
+        <!-- Use grid to achieve the layout -->
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+        <h3>OUR MENU</h3>
+      <p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+    <div>DISCOVER PIZZA</div></div>
+    <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+      <h3>OUR MENU</h3>
+    <p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+  <div>DISCOVER PIZZA</div></div>
+  <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+    <h3>OUR MENU</h3>
+  <p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+  <h3>OUR MENU</h3>
+<p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+  <h3>OUR MENU</h3>
+<p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+  <h3>OUR MENU</h3>
+<p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+  <h3>OUR MENU</h3>
+<p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+<div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png" alt="Error Loading">
+  <h3>OUR MENU</h3>
+<p>Explore our range of delicious Pizza's delivered in 30 minutes</p>
+<div>DISCOVER PIZZA</div></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <!-- Use Flex to achieve the layout  -->
+      <div>
+        <!-- Left hand side part  -->
+        <img src="https://www.dominos.co.in/assets/new_app_img@2x.png" alt="Error Loading">
+      </div>
+
+      <div>
+        <!-- Right hand side part  -->
+        <h1>Unlock Exclusive offers</h1>
+        <p>For lightning fast ordering experience download the Domino's app.</p>
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.09%20PM_558991.png" alt="Error Loading">
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png" alt="Erro Loading"></div>
+      </div>
+    </div>
+  </body>
+</html>
